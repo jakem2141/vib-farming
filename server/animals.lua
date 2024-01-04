@@ -19,7 +19,7 @@ CreateThread(function()
         Wait(500)
         local serverEntity = NetworkGetNetworkIdFromEntity(pig)
 
-        TriggerClientEvent('farming:client:TargetAnimalEntity', -1, i, serverEntity)
+        TriggerClientEvent('farming:client:TargetAnimalEntity', -1, i, pigInfo, serverEntity)
         TriggerClientEvent('farming:client:ControlSpawnedAnimals', -1, i, pigInfo, serverEntity)
     end
 
@@ -29,7 +29,7 @@ CreateThread(function()
         Wait(500)
         local serverEntity = NetworkGetNetworkIdFromEntity(cow)
         
-        TriggerClientEvent('farming:client:TargetAnimalEntity', -1, i, serverEntity)
+        TriggerClientEvent('farming:client:TargetAnimalEntity', -1, i, cowInfo, serverEntity)
         TriggerClientEvent('farming:client:ControlSpawnedAnimals', -1, i, cowInfo, serverEntity)
     end
 end)

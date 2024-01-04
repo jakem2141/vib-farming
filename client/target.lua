@@ -1,4 +1,4 @@
-RegisterNetEvent('farming:client:TargetAnimalEntity', function(data, serverEntity)
+RegisterNetEvent('farming:client:TargetAnimalEntity', function(data, animalInfo, serverEntity)
     Wait(500)
     local clientEntity = NetworkGetEntityFromNetworkId(serverEntity)
 
@@ -6,7 +6,7 @@ RegisterNetEvent('farming:client:TargetAnimalEntity', function(data, serverEntit
         {
             label = "Interact with: "..clientEntity,
             onSelect = function()
-                print("You selected pig number: "..clientEntity)
+                print("You selected animal number: "..clientEntity)
             end,
             icon = 'fas fa-shopping-basket',
             iconColor = "green",
