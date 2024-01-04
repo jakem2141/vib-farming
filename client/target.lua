@@ -1,5 +1,4 @@
 RegisterNetEvent('farming:client:TargetAnimalEntity', function(data, serverEntity)
-    print(json.encode(data, {indent = true}))
     Wait(500)
     local clientEntity = NetworkGetEntityFromNetworkId(serverEntity)
 
