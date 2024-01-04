@@ -7,3 +7,7 @@ QBCore = exports["qb-core"]:GetCoreObject()
 ---------------
 --Event Stuff--
 ---------------
+
+RegisterNetEvent('farming:client:ControlSpawnedAnimals', function(data, entity)
+    
+end)
