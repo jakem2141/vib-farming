@@ -11,6 +11,6 @@ QBCore = exports["qb-core"]:GetCoreObject()
 RegisterNetEvent('farming:client:ControlSpawnedAnimals', function(data, pigInfo, serverEntity)
     Wait(500)
     local clientEntity = NetworkGetEntityFromNetworkId(serverEntity)
-
+    SetBlockingOfNonTemporaryEvents(clientEntity, true)
     TaskWanderInArea(clientEntity, pigInfo.SpawnLocation.xyz, 10.0, 15, 3.0)
 end)
