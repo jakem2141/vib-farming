@@ -1,5 +1,6 @@
 RegisterNetEvent('farming:client:TargetAnimalEntity', function(data, animalInfo, serverEntity)
     Wait(500)
+
     local clientEntity = NetworkGetEntityFromNetworkId(serverEntity)
 
     local entity = exports.ox_target:addLocalEntity(clientEntity, {
